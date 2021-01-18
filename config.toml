@@ -24,6 +24,8 @@ build_search_index = false
 # Put all your custom variables here
 navbar_items = [
 	{ url = "$BASE_URL/", name = "Home" },
+	{ url = "$BASE_URL/data_structure", name = "Data Structure" },
+	{ url = "$BASE_URL/algorithm", name = "Algorithm" },
 	{ url = "$BASE_URL/posts", name = "Posts" },
     { url = "$BASE_URL/projects", name = "Side Projects" },
 	{ url = "$BASE_URL/tags", name = "Tags" },
