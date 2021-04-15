@@ -59,7 +59,7 @@ impl Solution {
     }
 }
 ```
-It is brute force way to find the max subarray. Time complexity is **O(n^2)**  
+Time complexity is **O(n^2)**  
 <br/>
 <br/>
 
@@ -76,65 +76,13 @@ impl Solution {
             if sum > maxSum {
                 maxSum = sum
             }
-            if sum < 0 {    // highlight-line
-                sum  = 0    // highlight-line
-            }               // highlight-line
+            if sum < 0 {    
+                sum  = 0    
+            }              
         }
         
         return maxSum;
     }
 }
 ```
-For example, we have an array of size 10.  
-
-> |index|0|1|2|3|4|5|6|7|8|9|
-> |---|---|---|---|---|---|---|---|---|---|---|
-> value|-3|-4|-4|-5|3|4|7|-1|0|1|
-
-Max subarray=`nums[4]` + `num[5]` + `num[6]` = 3 + 4 + 7 = 14
-
-
-### Get sum of subarray
-> **sum(nums[0]..nums[6])**  
-> `nums[0]`+`nums[1]`+...+`nums[5]`+`nums[6]`  
->=-3+(-4)+(-4)+(-5)+3+4+7  
->=-2  
-
-
-> **sum(nums[0]..nums[3])**   
-> `nums[0]`+`nums[1]`+`nums[2]`+`nums[3]`  
->=-3+(-4)+(-4)+(-5)  
->=-16  
-
-
-> **sum(nums[4]..nums[6])**  
-> `nums[4]`+`nums[5]`+`nums[6]`  
->=3+4+7  
->=14
-
-> sum(nums[**4**]..nums[**6**])=sum(nums[**0**]..nums[**6**])-sum(nums[**0**]..nums[**3**])
-
-> sum(nums[**i**]..nums[**j**])=sum(nums[**0**]..nums[**j**])-sum(nums[**0**]..nums[**i-1**])
-
-
-### What does this block of code mean...? 
-```
-if sum < 0 {
-    sum  = 0
-}
-```
-
-> *if*  
-> **x < 0**  
-> *then*  
-> **x + y < y**  
-
-
-> *if*  
-> **sum(nums[0]..nums[3]) < 0**  
-> *then*  
-> **sum(nums[0]..nums[3]) + sum(nums[4]..nums[6])<sum(nums[4]..nums[6])** 
-
-##### If `x` and `y` are added and the value is smaller than `y`, then removing `x` and using only the value of `y` will yield a larger value.
-
-**sum(nums[i]..nums[j])=0+sum(nums[i]..nums[j])**
+Time complexity is **O(n)** 
