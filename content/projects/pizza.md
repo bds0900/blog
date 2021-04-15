@@ -10,10 +10,7 @@ tags = ["project", "C#","SQL","EF core","Blazor","ASP.NET","Front-End","Back-End
 # Github Repository
 [Click here](https://github.com/bds0900/pizza)
 
-# Test Application
-API [Click here](https://pizza-test-api.herokuapp.com/api/pizza)  
-Client [Click here](https://blazor-test-client.herokuapp.com)  
-(Activate the app will take 5-10 seconds...) 
+
 # Project
 Ordering pizza and side dishes at a fake pizza shop 
 
@@ -40,14 +37,14 @@ And for this project, I used techs I haven't used before. I learned a lot about 
 
 # Features
 
-API [Click here](https://pizza-test-api.herokuapp.com/api/pizza)  
+API  
 - Retrive Pizza list
 - Retrive Side dishes list
 - Create order
 - Look up order history
 - Track order
 
-CLIENT [Click here](https://blazor-test-client.herokuapp.com)  
+CLIENT  
 
 - Display Pizza info
 - Display Side dish info
@@ -62,34 +59,28 @@ CLIENT [Click here](https://blazor-test-client.herokuapp.com)
 ### **api/pizza/type**
 - get pizza type
 
-> https://pizza-test-api.herokuapp.com/api/pizza/type
 
 ### **api/pizza/size**
 - get pizza size
 
-> https://pizza-test-api.herokuapp.com/api/pizza/size
 
 ### **api/pizaz/topping**
 - get pizza toppings
 
-> https://pizza-test-api.herokuapp.com/api/pizza/topping
 
 ### **api/pizza/sides**
 - get side dishes
 
-> https://pizza-test-api.herokuapp.com/api/pizza/sides
 
 ### **api/Pizza/Customers/{id}/Orders**
 - get order history by customer id  
 `parameter: Guid`
 
-> https://pizza-test-api.herokuapp.com/api/pizza/Customers/7d9ecead-eca1-48b2-8366-784fb1c17c16/Orders
 
 ### **api/Pizza/Orders/{orderId}**
 - get order detail by orderId  
 `parameter: Guid`
 
-> https://pizza-test-api.herokuapp.com/api/Pizza/Orders/dc6f9ec8-366f-11eb-8dcc-22000bda0bac
 
 
 
@@ -97,7 +88,6 @@ CLIENT [Click here](https://blazor-test-client.herokuapp.com)
 ### **api/Pizza**
 - create an order
 
-> https://pizza-test-api.herokuapp.com/api/Pizza
 
 > body
 ```
